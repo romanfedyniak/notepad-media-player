@@ -29,7 +29,6 @@ void start(std::string pathToNotepad, std::string pathToVideo, int charsWidth, i
         ASCIIConverter::pixel_vector* pvector = converter.getImage();
         for (auto iter = pvector->cbegin(); iter != pvector->cend(); ++iter)
         {
-            //printf((std::to_string(iter->x) + ":" + std::to_string(iter->y) + "\n").c_str());
             notepad.drawChar(iter->x, iter->y, iter->ch);
         }
         delete pvector;
