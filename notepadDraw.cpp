@@ -179,7 +179,7 @@ SIZE NotepadDraw::calcWindowSize()
 	windowSize.cx =
 		textRect.right
 		+ 16 // scroll bar size
-		+ indent[fontSize]; // indent text from the edges
+		+ indent[fontSize - 1]; // indent text from the edges
 		// I did not find how to determine the indentation correctly, so I picked up a constant
 	windowSize.cy =
 		textRect.bottom
